@@ -14,6 +14,8 @@ public class AccountTest {
        //System.out.printf("Initial name is %s%n%n", myAccount.getName());
 
        //System.out.println("Enter Firstname: ");
+
+       System.out.println("enter ur firstname");
        String FirstName = input.nextLine();
 
        myAccount.setName(FirstName);
