@@ -20,6 +20,7 @@ public class Account {
 
         public Acount(String name, double balance){
             this.name = name;
+
             if (balance>0.0){
                 this.balance = balance;
 
