@@ -1,10 +1,10 @@
 public class PetrolPurchase {
 
-    public String stationLocation;
-    public String petroleumType;
-    public int quantityPurchased;
-    public double price;
-    public double percentageDiscount;
+    private String stationLocation;
+    private String petroleumType;
+    private int quantityPurchased;
+    private double price;
+    private double percentageDiscount;
 
     public PetrolPurchase( String stationLocation, String petroleumType, int quantityPurchased, double price, double percentageDiscount){
 
@@ -68,7 +68,7 @@ public class PetrolPurchase {
     }
     public double getPurchaseAmount(double price, double percentageDiscount){
 
-       double netPurchaseAmount = price-(percentageDiscount/100 *price);
+       double netPurchaseAmount = quantityPurchased * price-(percentageDiscount/100 *price);
 
        return netPurchaseAmount;
 
