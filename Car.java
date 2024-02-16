@@ -3,11 +3,14 @@ public class Car {
     private String year;
     private double price;
 
+
+
     public Car(String model, String year, double price){
 
         this.model = model;
         this.year = year;
         this.price = price;
+
 
     }
 
@@ -40,8 +43,10 @@ public double getPrice(){
 }
 
 public double percentageDiscount(double discount){
-       double percentageDiscount = price -(discount/100 *price);
-       return percentageDiscount;
+       return price -(discount/100 *price);
+
 }
+
+
 
 }

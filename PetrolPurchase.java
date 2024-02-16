@@ -23,7 +23,7 @@ public class PetrolPurchase {
 
     public void setStationLocation(String stationLocation){
 
-        this.stationLocation=stationLocation;
+        this.stationLocation = stationLocation;
 
     }
     public void setPetroleumType(String petroleumType){
@@ -66,11 +66,12 @@ public class PetrolPurchase {
     public double getPercentageDiscount(){
         return percentageDiscount;
     }
-    public double getPurchaseAmount(double price, double percentageDiscount){
+    public double getPurchaseAmount(){
 
-       double netPurchaseAmount = quantityPurchased * price-(percentageDiscount/100 *price);
+       //return  quantityPurchased * price-(percentageDiscount/100 *price);
+        return this.quantityPurchased * this.price-this.percentageDiscount ;
 
-       return netPurchaseAmount;
+
 
     }
 
