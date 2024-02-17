@@ -69,7 +69,7 @@ public class PetrolPurchase {
     public double getPurchaseAmount(){
 
        //return  quantityPurchased * price-(percentageDiscount/100 *price);
-        return this.quantityPurchased * this.price-this.percentageDiscount ;
+        return this.quantityPurchased * this.price-(this.percentageDiscount/100 * this.price);
 
 
 
